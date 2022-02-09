@@ -1,0 +1,10 @@
+@mixin grid {
+    grid-template-areas:
+                        "header header header" 
+                          "main main main"
+                          "cards cards cards"
+                         "footer footer footer";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    
+}
