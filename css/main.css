@@ -37,9 +37,39 @@
     display: flex;
     justify-content: center;
     flex-direction: column; }
+    .conteiner header .contMenu {
+      background-color: gray;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-end;
+      width: 100%; }
+      .conteiner header .contMenu .logo {
+        width: 50%; }
+      .conteiner header .contMenu nav .menu {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        list-style: none;
+        width: 100%; }
+        .conteiner header .contMenu nav .menu li a {
+          display: flex;
+          padding: 10px 10px;
+          margin: 10px;
+          color: #eeeded;
+          font-size: 25px;
+          font-weight: 100;
+          text-decoration: none; }
+          .conteiner header .contMenu nav .menu li a:hover {
+            color: #a74add;
+            transform: scale(1.1);
+            opacity: 0.6;
+            background-color: antiquewhite;
+            font-weight: bold; }
   .conteiner main {
     grid-area: main;
-    justify-content: center; }
+    justify-content: center;
+    background-color: bisque; }
     .conteiner main h2 {
       text-align: center;
       font-family: 'Raleway', sans-serif;
@@ -48,68 +78,45 @@
       text-align: center;
       font-family: 'Raleway', sans-serif;
       margin-top: 100px; }
-    .conteiner main .contMenu {
-      background: linear-gradient(90deg, #02da17 4%, #010009 74%);
+    .conteiner main .cards {
+      grid-area: cards;
       display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: flex-end;
-      width: 100%; }
-      .conteiner main .contMenu nav .menu {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-end;
-        list-style: none;
-        width: 100%; }
-        .conteiner main .contMenu nav .menu li a {
-          display: flex;
-          padding: 10px 10px;
-          margin: 10px;
-          color: #eeeded;
-          font-size: 25px;
-          font-weight: 100;
-          text-decoration: none; }
-          .conteiner main .contMenu nav .menu li ahover {
-            color: #a74add;
-            transform: scale(1.1);
-            opacity: 0.6;
-            background-color: azure;
-            font-weight: bold; }
-  .conteiner .cards {
-    grid-area: cards;
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    flex-wrap: wrap; }
-    .conteiner .cards .card {
-      border: solid 2px #00000a;
-      background-color: white;
-      width: 300px;
-      height: auto;
-      margin: 20px;
-      padding: 10px;
-      border-radius: 5%;
-      text-align: center; }
-      .conteiner .cards .card img {
-        width: 80%;
+      width: 100%;
+      justify-content: space-around;
+      flex-wrap: wrap; }
+      .conteiner main .cards .card {
+        border: solid 2px #00000a;
+        background-color: white;
+        width: 300px;
         height: auto;
-        padding: 20px;
-        margin-top: 100px;
-        align-items: center; }
-        .conteiner .cards .card imghover {
-          transform: scale(1.3); }
+        margin: 20px;
+        padding: 10px;
+        border-radius: 5%;
+        text-align: center; }
+        .conteiner main .cards .card img {
+          width: 80%;
+          height: auto;
+          padding: 20px;
+          margin-top: 100px;
+          align-items: center; }
+          .conteiner main .cards .card imghover {
+            transform: scale(1.3); }
+    .conteiner main .contNosotros {
+      display: flex;
+      width: 100%; }
+      .conteiner main .contNosotros .imgbanner {
+        width: 100%; }
   .conteiner footer {
     display: flex;
     grid-area: footer;
-    justify-content: center; }
-  .conteiner .logo {
-    display: flex;
-    width: 50%;
-    margin: 0;
-    justify-content: start; }
-  .conteiner .redesSociales {
-    display: flex;
-    width: 100%;
-    align-content: center;
-    justify-content: space-evenly;
-    justify-content: flex-end; }
+    justify-content: center;
+    background-color: bisque; }
+    .conteiner footer .redesSociales {
+      display: flex;
+      width: 100%;
+      align-content: center;
+      justify-content: space-evenly;
+      justify-content: flex-end; }
+      .conteiner footer .redesSociales .imglogo {
+        margin: 10px;
+        width: 50%; }
